@@ -1,0 +1,362 @@
+/* Mobile */
+
+* {
+    box-sizing: border-box;
+}
+
+body{   
+    margin: auto;
+    background-color: black;
+    padding-top: 15px;
+    width: 100%;    
+}
+
+header{
+    display: block;
+    margin-bottom: 20px;  
+}
+
+div{
+    margin: 0px;
+    padding: 0px;
+}
+
+article.logo img{
+   display: block;
+   margin: auto;
+   max-width: 100%;   
+}
+
+/*MENI */
+header nav ul.button{    
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;   
+    overflow: hidden;     
+}
+
+header nav ul.button li{
+     padding: 0px;
+     margin: 0px;   
+     margin-right: 2px;
+     overflow: auto;                    
+}
+
+header nav ul.button li a{      
+    display: block; 
+    font-family: Georgia, serif;           
+    color: white;
+    background-color: rgb(255,0,0);    
+    padding: 8px 16px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;             
+}
+
+header nav ul.button li a:hover, .aktive {
+    background-color: rgb(255,255,255);
+    color: rgb(255, 0, 0);
+    border-radius: 5px;    
+}
+
+#burger{
+    display: inline-block;          
+}
+
+#gl_meni.button{
+    display: none;
+}
+
+#gl_meni.button.prikazi{
+    display: block;
+}
+/*MENI - kraj*/
+
+article.article_general
+{
+    padding: 10px;
+    overflow: auto;             
+}
+
+article.article_general p{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;   
+    text-align: justify;   
+    font-size: 16px;          
+    margin-top: 0px;      
+}
+
+.crna_pozadina{
+    background-color: rgb(20,20,20);
+}
+
+.bela_pozadina{
+    background-color: rgb(230,230,220);
+}
+
+.bela_pozadina p{    
+   color: rgb(0,0,0);    
+}
+
+
+
+.crna_pozadina p{
+    color: rgb(230,230,220);
+}
+
+.crna_pozadina ul {
+    color: rgb(230,230,220);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+article.slika_art img, article.slika_block img{
+    display: block;     
+    margin: auto;    
+    margin-bottom: 15px;   
+    max-width: 100%;     
+}
+
+.vidljivo{
+    display: none;
+}
+
+.slika_levo_m img{
+    float: left;  
+    margin-right: 15px;
+    max-width: 75%;     
+}
+            
+.slika_desno_m img{
+    float: right;  
+    margin-left: 15px;
+    max-width: 75%;            
+}
+
+section{
+    margin: 0px;      
+    padding: 10px;       
+}
+
+section.crna_pozadina article{
+    padding-bottom: 10px;
+}
+
+.art_usluge{
+    padding: 10px;          
+    overflow: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.art_usluge img{
+   display: block;    
+   margin: auto;
+   max-width: 100%;   
+}
+
+.art_usluge p{
+    font-family: Georgia, serif;
+    font-size: 16px;
+    text-align: justify;
+    word-wrap: break-word;    
+    color: rgb(230,230,220);
+    vertical-align: center;                 
+}
+
+.art_cene{
+    padding: 10px;          
+    overflow: auto;
+    max-width: 100%;        
+    box-sizing: border-box;             
+}
+   
+.art_cene p{
+    font-size: 20px;
+}
+
+.art_cene ul{
+    margin: 0px;
+    padding: 10px;  
+    padding-left: 20px;      
+}
+
+article.bela_pozadina ul li p{    
+    text-align: left;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    line-height: 120%;
+}
+
+article.bela_pozadina ul li p span{
+    font-weight: bold;
+}
+
+footer {
+	width:100%;
+    overflow: auto;
+    display: block;
+    background: red;
+    
+	margin-top:30px;
+    margin-bottom: 20px;
+    
+	padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;   
+}	
+
+ 
+footer p.p_levo, footer p.p_desno{
+    margin: auto;
+    text-align: center;
+     
+    padding: 0px;
+    padding-bottom: 10px;    
+}
+
+footer div.div_block{
+    display: block; 
+    overflow: auto;
+}
+
+#futimg{
+        display: block;     
+        margin: auto;
+}
+
+.glyphstil{
+    display: inline-block;    
+    width: 50px; 
+    margin-right: 30px
+}
+
+article.slikex{
+    display: none;
+}
+
+article.slider{
+    display: block;   
+          
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+div.slider{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;        
+}
+
+span.boldfont{
+    font-weight: bold;
+}
+
+span.vertigofont{
+    color: red;
+}
+
+@media only screen and (min-width: 380px) {
+   div.slider{
+     width: 350px;
+    } 
+} 
+
+/*Small desktop from 651px*/
+@media only screen and (min-width: 651px) {
+    /*MENI*/
+    #burger{
+        display: none;
+    }
+    
+    #gl_meni.button{
+        display: block;
+    }
+    
+    nav ul.button li{
+        float: left;
+    }
+    /*MENI*/
+    
+    article.slika_art img{
+        float: left;
+        margin-right: 15px;  
+        margin-bottom: 0px;      
+    }
+    
+     footer{
+        width: 100%;
+    }
+    
+    footer p.p_levo{
+        margin: 0px;
+        float: left;  
+        text-align: left;                 
+    }
+   
+    footer p.p_desno{
+        margin: 0px;
+        float: right;    
+        text-align: right;               
+    }
+    
+     #futimg{
+        /*float: right;*/
+        margin: auto;       
+    }
+    
+    .vidljivo{
+        display: block;
+    }                     
+           
+    article.slikex{
+        display: block;
+        width: 100%;
+        overflow: auto;
+                        
+        margin: 0px;
+        padding: 10px;    
+            
+        max-width: 100%;
+        text-align: center;
+    }       
+    
+    article.slider{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 851px) {
+     article.slikex{                              
+            display: flex;
+            align-items: center;
+            justify-content: space-between;        
+    }   
+}
+
+/*Over 1000px screen*/
+@media only screen and (min-width: 1001px) {
+    body{
+        margin: auto;
+        width: 1000px;
+    }      
+    
+    .art_usluge p{
+        font-size: 20px;
+    }
+    
+    footer{
+        width: 100%;
+    }       
+    
+        
+}
+
+

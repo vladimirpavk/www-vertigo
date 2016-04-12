@@ -1,0 +1,179 @@
+body{
+    border: red;   
+    margin: auto;     
+}
+
+
+
+.logo{  
+   display: block;
+   margin: auto;
+   max-width: 100%;  
+}
+
+
+/* artikl slika levo
+______________________
+*/
+
+/*.article_levo{
+    background-color: red;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+}
+
+.article_levo img{
+   float: left;    
+   margin-right: 20px;
+   border-style: solid;
+   border-color: rgb(0,0,0); 
+   max-width: 100%
+}
+
+.article_levo p{
+    font-family: Georgia, serif;
+    font-size: 20px;    
+    color: rgb(0,0,0);
+    text-align: justify; 
+    
+    background-color: green;    
+    border-style: solid;     
+}*/
+
+.article_levo{
+   background-color: green;   
+   padding: 10px;
+   border-style: solid;
+   border-radius: 16px;   
+   overflow: auto;         
+}
+
+.article_levo img{       
+   margin : auto;
+   max-width: 100%;      
+}
+
+.article_levo p{
+    font-family: Georgia, serif;
+    color: rgb(0,0,0);
+    text-align: justify;           
+}
+
+.article_desno{
+   background-color: green;   
+   padding: 10px;
+   border-style: solid;
+   border-radius: 16px;   
+   overflow: auto;         
+}
+
+.article_desno img{       
+   margin : auto;
+   max-width: 100%;      
+}
+
+.article_desno p{
+    font-family: Georgia, serif;
+    color: rgb(0,0,0);
+    text-align: justify;           
+}
+
+@media screen and (min-width: 0px) and (max-width: 650px){
+    body{
+        width: 100%;       
+        background-color: purple;  
+    }           
+    
+    .article_levo img{
+        display: block;    
+        
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;    
+    }
+    
+    .article_levo p{            
+        font-size: 16px;                                    
+    }
+    
+    .article_desno img{
+        display: block;    
+        
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;    
+    }
+    
+    .article_desno p{            
+        font-size: 16px;                                    
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 999px){
+    body{
+        width: 100%;                
+        background-color: yellowgreen;
+    }
+    
+     .article_levo img{
+        float: left;     
+        margin-right: 15px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;   
+    }
+    
+    .article_levo p{
+        font-size: 16px;     
+        
+        margin-top: 0px;                                     
+    }
+    
+    .article_desno img{
+        float: right;     
+        margin-left: 15px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;   
+    }
+    
+    .article_desno p{
+        font-size: 16px;     
+        
+        margin-top: 0px;                                     
+    }
+    
+}
+
+@media screen and (min-width: 1000px){
+    body{
+        width: 1000px;           
+        background-color: blue;     
+    }
+    
+     .article_levo img{
+        float: left;  
+        margin-right: 15px;     
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }
+    
+    .article_levo p{
+        font-size: 16px;  
+        
+        margin-top: 0px;                                        
+    }
+    
+    .article_desno img{
+        float: right;  
+        margin-left: 15px;     
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    
+    .article_desno p{
+        font-size: 16px;  
+        
+        margin-top: 0px;                                        
+    }
+}
+

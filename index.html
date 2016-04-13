@@ -221,10 +221,9 @@
     $(document).ready(
         function()
         {
-              $('#burger').click(
-                 function(){
-                     $('#gl_meni').slideToggle(); 
-                });
+            $('#burger').bind('click', function(){
+                $('#gl_meni').slideToggle();
+            });       
                 
               $('article div.slider').sss(
                                 {
@@ -238,7 +237,7 @@
     $(window).resize(
         function()
         {            
-            if( $(window).width() < 635 )
+            if( $('article.slikex').css("display") == "none" )
             {
                 if(window.isSSSFired == false)
                 {
@@ -253,146 +252,5 @@
     )
     
 </script>
-
-<!-- <script>
-      $(document).ready(
-         function(){
-             
-             window.isSSSFired = false;
-             
-             /*var delay = (function() {
-                var timer = 0;
-                return function(callback){
-                    clearTimeout(timer);
-                    timer = setTimeout(callback, 0);
-                }
-            })();*/
-             
-             $('#burger').click(
-                 function(){
-                     $('#gl_meni').slideToggle(); 
-                }
-             );
-             
-            checkSize();
-            //$(window).resize(checkSize);
-             
-             /*$(window).resize(function() {
-                delay(function(){
-                        checkSize();
-                     })
-             });*/
-         });
-      
-      
-      function checkSize()
-      {
-         setTimeout(checkSize2, 5000);
-      }
-      
-      function checkSize2()
-      { 
-          if( $(window).width() < 635 )
-                    {
-                        if( window.isSSSFired == false)
-                        {
-                           window.isSSSFired = true;
-                           console.log($(window).width());
-                           $('article div.slider').sss(
-                                {
-                                     slideShow : false
-                                });                                                               
-                        }                      
-                    }   
-      }
-      
-      function sayResize()
-      {
-          console.log("Say resize");
-      }
-</script>         
--->
-
-<!--
-<script>
-    
-    /*JavaScript way     
-    function clickBurger()
-    {                                 
-        console.log("Click burger...");
-        //document.getElementById("gl_meni").classList.toggle("responsive");
-        $('#gl_meni').toggleClass('responsive');            
-    }        */
-    
-    /*JQuery way*/
-    /*$(document).ready( function(){
-    $('#burger li').click( function(){        
-        $('#gl_meni').toggleClass('responsive');                        
-     })});*/
-     
-     
-     $(document).ready(
-         function(){
-             $('#burger').click(
-                 function(evt){
-                     /*console.log("Bruger clicked...")
-                     console.log(evt);
-                     $('#gl_meni').toggleClass('prikazi');*/
-                     $('#gl_meni').slideToggle(); 
-                }
-             )
-             
-            // $('a.gallery').fancybox();
-             
-            /*$('article div.slider').sss({
-                 slideShow : false
-             });	*/
-              
-            checkSize();
-            
-           $(window).resize(checkSize());              
-                 
-              /*  if($(window).width() < 635)
-                 {
-                     if(!global_isFired)
-                     {                                              
-                            console.log("if fired - "+$(window).width());
-                            $('article div.slider').sss({
-                                    slideShow : false
-                                });
-                     }
-                 }
-             }
-             );
-             
-         }
-     );
-     
-     /*$(document).ready(
-         function(){
-             function eventHandler(evt){
-                 //console.log("Event...");
-                 console.log(evt);
-                 console.log($(this));
-             }
-             
-             $('#burger').bind('click', eventHandler);
-             $('#burger').bind('mouseover', eventHandler);
-             $('html').bind('click', eventHandler);         
-     });*/
- 
-    function checkSize()
-    {
-         if($(window).width() < 635)
-                 {                                                               
-                            console.log("if fired - "+$(window).width());
-                            $('article div.slider').sss({
-                                    slideShow : false
-                                });                     
-                 }
-    }
- 
-</script>
--->
      
 </body>

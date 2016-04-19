@@ -11,9 +11,11 @@
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.js"></script>-->
     <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>    
     <script src="sss/sss.js"></script>
+    <script src="colorbox-master/jquery.colorbox-min.js"></script>
    
     <link href="css/styles.css" rel="stylesheet" type="text/css">      
     <link href="sss/sss.css" rel="stylesheet" type="text/css" media="all">
+    <link href="colorbox-master/colorbox.css" rel="stylesheet" type="text/css">
    
 </head>
 
@@ -88,10 +90,10 @@
    </article>
    
    <article class="bela_pozadina slikex">
-      <a href="./images/sobe/1.jpg" class="gallery"><img src="./images/sobe/1_thumb.jpg"></a>
-      <a href="./images/sobe/2.jpg" class="gallery"><img src="./images/sobe/2_thumb.jpg"></a>
-      <a href="./images/sobe/3.jpg" class="gallery"><img src="./images/sobe/3_thumb.jpg"></a>
-      <a href="./images/sobe/4.jpg" class="gallery"><img src="./images/sobe/4_thumb.jpg"></a>        
+      <a href="./images/sobe/1.jpg" class="gallery" rel="gal1"><img src="./images/sobe/1_thumb.jpg"></a>
+      <a href="./images/sobe/2.jpg" class="gallery" rel="gal1"><img src="./images/sobe/2_thumb.jpg"></a>
+      <a href="./images/sobe/3.jpg" class="gallery" rel="gal1"><img src="./images/sobe/3_thumb.jpg"></a>
+      <a href="./images/sobe/4.jpg" class="gallery" rel="gal1"><img src="./images/sobe/4_thumb.jpg"></a>        
   </article>
   
   <article class="article_general bela_pozadina slider">
@@ -230,7 +232,9 @@
                                      slideShow : false
                                 });      
                                 
-            $(document).trigger('page_ready');               
+            $(document).trigger('page_ready');     
+            
+            $('a.gallery').colorbox();          
         }
     );     
     

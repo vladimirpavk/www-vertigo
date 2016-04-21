@@ -328,6 +328,11 @@ span.vertigofont{
         text-align: center;
     }       
     
+    article.slikex a:hover{
+         -webkit-filter: opacity(50%); /* Chrome, Safari, Opera */
+         filter: opacity(50%);
+    }
+    
     article.slider{
         display: none;
     }
@@ -358,5 +363,3 @@ span.vertigofont{
     
         
 }
-
-

@@ -221,17 +221,23 @@
     $(document).ready(
         function()
         {
+            window.isSSSFired = false;
+            
             $('#burger').bind('click', function(){
                 $('#gl_meni').slideToggle();
             });       
-                
-              $('article div.slider').sss(
-                                {
-                                     slideShow : false
-                                });      
-                                
-            $(document).trigger('page_ready');     
             
+            if( $('article.slikex').css("display") == "none" )
+            {
+                $('article div.slider').sss(
+                                    {
+                                        slideShow : false
+                                    }
+                )
+                window.isSSSFired = true;
+                $(document).trigger('page_ready');                
+            };   
+                                            
             $('a.gallery').colorbox();          
         }
     );     
@@ -239,18 +245,30 @@
     $(window).resize(
         function()
         {            
-            if( $('article.slikex').css("display") == "none" )
-            {
-                //if(window.isSSSFired == false)
+            $(document).ready(
+                function()
                 {
-                  //  window.isSSSFired = true;
-                  
-                    $(document).trigger('page_ready');
-                }  
+                    console.log("Page resize" + window.isSSSFired);
+                     if( $('article.slikex').css("display") == "none" )
+                     {
+                         console.log("Page resize" + window.isSSSFired);
+                         if( window.isSSSFired == false)
+                         {
+                            window.isSSSFired = true;
+                            $('article div.slider').sss(
+                                        {
+                                            slideShow : false
+                                        }
+                            )                                                
+                            $(document).trigger('page_ready');
+                         }
+                         
                 
-                $('#burger').focus();
-                                                                   
-            }
+                        $('#burger').focus();                                                                   
+                    } 
+                }
+            )
+          
         }
     )
     

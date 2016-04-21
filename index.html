@@ -79,7 +79,7 @@
                 
    <article class="article_general bela_pozadina slika_art">                
         <img src="images/hotel.jpg" alt="Hotel">
-        <p><span class="vertigofont">Vila "VERTIGO" - Beograd</span> raspolaže sa 43 sobe, kapaciteta 110 ležajeva različitih struktura od dvokrevetnih do osmokrevetnih.
+        <p><span class="vertigofont">Vila "VERTIGO" - Beograd</span> raspolaže sa 43 sobe, kapaciteta 110 ležajeva različitih struktura od jednokrevetnih do četvorokrevetnih.
            <br><br class="vidljivo">Sve sobe su klimatizovane, sa sopstvenim kupatilom, toplom vodom 24h, centralnim grejanjem i LCD televizorom sa kablovskom televizijom.
            <br><br class="vidljivo">U sklopu objekta nalazi se kafe-bar, restoran, noćni klub, salon lepote i kiosk sa svim vrstama štampe i robom široke potrošnje.
            <br><br class="vidljivo">Kompletan objekat je pokriven besplatnim bežičnim internetom.
@@ -108,10 +108,10 @@
     <article class="art_cene crna_pozadina">
        <ul>
            <li><p>Usluga je na bazi noćenja.</p></li>
-           <li><p>Cena po osobi je <span>10 eura (1150 RSD)</span></p></li>
-           <li><p>U cenu nije uključena boravišna taksa u iznosu od 140 RSD i osiguranje u iznosu od 20 RSD.</p></li>
+           <li><p>Cena po osobi je <span>1200 RSD.</span></p></li>
+           <li><p>U cenu nije uključena boravišna taksa u iznosu od 151 RSD i osiguranje u iznosu od 20 RSD.</p></li>
            <li><p>Postoji mogućnost organizovanja grupnog smeštaja. Svaka <span>deseta</span> osoba je gratis.</p></li>
-           <li><p>Pružamo uslugu dnevnog odmora u periodu od 9h-19h po ceni od <span>1200 RSD za dve osobe</span></p></li>
+           <li><p>Pružamo uslugu dnevnog odmora u periodu od 9h-19h po ceni od <span>1240 RSD za dve osobe.</span></p></li>
            <li><p>Postoji mogućnost organizovanja prevoza gostiju do određenih lokacija u Beogradu i širom Srbije.</p></li>
        </ul>           
    </article>   
@@ -217,9 +217,7 @@
    </footer>
 
 <script>
-    
-    window.isSSSFired = false;
-    
+      
     $(document).ready(
         function()
         {
@@ -243,9 +241,9 @@
         {            
             if( $('article.slikex').css("display") == "none" )
             {
-                if(window.isSSSFired == false)
+                //if(window.isSSSFired == false)
                 {
-                    window.isSSSFired = true;
+                  //  window.isSSSFired = true;
                     $(document).trigger('page_ready');
                 }  
                 

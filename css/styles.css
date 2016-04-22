@@ -241,21 +241,15 @@ article.slikex{
     display: none;
 }
 
-/*article.slider{
+article.slider{
     display: block;   
           
     padding: 0px;
     padding-bottom: 20px;
-}*/
+}
 
 div.slider{
-    /*iz article.slider*/
-    display: block;   
-          
-    padding: 0px;
-    padding-bottom: 20px;
-    
-    
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
@@ -340,11 +334,7 @@ span.vertigofont{
          filter: opacity(50%);
     }
     
-   /* article.slider{
-        display: none;
-    }*/
-    
-    div.slider{
+    article.slider{
         display: none;
     }
 }

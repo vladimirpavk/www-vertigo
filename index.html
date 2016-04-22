@@ -90,20 +90,20 @@
    </article>
    
    <article class="bela_pozadina slikex">
-      <a href="./images/sobe/1.jpg" class="gallery" rel="gal1"><img src="./images/sobe/1_thumb.jpg"></a>
-      <a href="./images/sobe/2.jpg" class="gallery" rel="gal1"><img src="./images/sobe/2_thumb.jpg"></a>
-      <a href="./images/sobe/3.jpg" class="gallery" rel="gal1"><img src="./images/sobe/3_thumb.jpg"></a>
-      <a href="./images/sobe/4.jpg" class="gallery" rel="gal1"><img src="./images/sobe/4_thumb.jpg"></a>        
+      <a href="./images/sobe/bgd/1.jpg" class="gallery" rel="gal1"><img src="./images/sobe/bgd/1_thumb.jpg"></a>
+      <a href="./images/sobe/bgd/2.jpg" class="gallery" rel="gal1"><img src="./images/sobe/bgd/2_thumb.jpg"></a>
+      <a href="./images/sobe/bgd/3.jpg" class="gallery" rel="gal1"><img src="./images/sobe/bgd/3_thumb.jpg"></a>
+      <a href="./images/sobe/bgd/4.jpg" class="gallery" rel="gal1"><img src="./images/sobe/bgd/4_thumb.jpg"></a>        
   </article>
   
-  <article class="article_general bela_pozadina slider">
-      <div class="slider">          
-        <img src="./images/sobe/1_m.jpg">
-        <img src="./images/sobe/2_m.jpg">
-        <img src="./images/sobe/3_m.jpg">
-        <img src="./images/sobe/4_m.jpg">  
+  <!--<article class="article_general bela_pozadina slider">-->
+      <div class="slider bela_pozadina">          
+        <img src="./images/sobe/bgd/1_m.jpg" width="350" height="262">
+        <img src="./images/sobe/bgd/2_m.jpg" width="350" height="262">
+        <img src="./images/sobe/bgd/3_m.jpg" width="350" height="262">
+        <img src="./images/sobe/bgd/4_m.jpg" width="350" height="262">  
     </div>
-  </article> 
+  <!--</article>--> 
 
     <article class="art_cene crna_pozadina">
        <ul>
@@ -229,7 +229,7 @@
             
             if( $('article.slikex').css("display") == "none" )
             {
-                $('article div.slider').sss(
+                $('div.slider').sss(
                                     {
                                         slideShow : false
                                     }
@@ -255,7 +255,7 @@
                          if( window.isSSSFired == false)
                          {
                             window.isSSSFired = true;
-                            $('article div.slider').sss(
+                            $('div.slider').sss(
                                         {
                                             slideShow : false
                                         }
